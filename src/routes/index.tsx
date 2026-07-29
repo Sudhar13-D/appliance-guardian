@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Activity,
-  AlertTriangle,
+  Mail,
   BellRing,
   BrainCircuit,
   Cpu,
@@ -406,8 +406,7 @@ function Index() {
                   aria-label="Email Lumora"
                   className="flex size-9 items-center justify-center rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20"
                 >
-                  <AlertTriangle className="hidden" />
-                  <Activity className="size-4" />
+                  <Mail className="size-4" />
                 </a>
               </div>
             </div>
