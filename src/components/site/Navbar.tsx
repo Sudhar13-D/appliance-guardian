@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Activity } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logoAsset from "@/assets/vigise-logo.png.asset.json";
 
 const links = [
   { href: "#problem", label: "Problem" },
@@ -31,10 +32,13 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold text-primary">
-          <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <Activity className="size-4" />
-          </span>
-          Vigise
+          <img
+            src={logoAsset.url}
+            alt="Vigise logo"
+            width={144}
+            height={144}
+            className="h-9 w-auto rounded-md"
+          />
         </a>
 
         <div className="hidden items-center gap-7 md:flex">
