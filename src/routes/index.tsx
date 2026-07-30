@@ -96,19 +96,28 @@ const phases = [
 
 const team = [
   {
-    name: "Founder Name",
-    role: "Co-founder & CEO",
-    bio: "Leads partnerships and product. Background in embedded systems and appliance electronics.",
+    name: "Sudharsan D",
+    role: "Founder",
+    bio: "Leads partnerships and product direction, with a background in embedded systems and appliance electronics.",
+    linkedin: "https://www.linkedin.com/in/sudharsan-d-30bb79364",
   },
   {
-    name: "Founder Name",
-    role: "Co-founder & CTO",
+    name: "Chandru P",
+    role: "Founder",
     bio: "Builds the diagnostic models and sensing firmware behind Vigise's health reports.",
+    linkedin: "https://www.linkedin.com/in/chandru-p-13bb99333/",
   },
   {
-    name: "Advisor Name",
+    name: "Prabu Kumar S P",
+    role: "Founder",
+    bio: "Drives hardware integration and bench validation across appliance modules.",
+    linkedin: "https://www.linkedin.com/in/prabu-kumar-s-p-79998326a/",
+  },
+  {
+    name: "Nelopher Arulsamy",
     role: "Hardware Advisor",
-    bio: "Two decades in appliance manufacturing, quality engineering, and service operations.",
+    bio: "Advises on appliance manufacturing, quality engineering, and service operations.",
+    linkedin: "https://www.linkedin.com/in/nelopher-arulsamy-645b48330/",
   },
 ];
 
