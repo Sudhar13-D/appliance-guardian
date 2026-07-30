@@ -16,11 +16,12 @@ import { Navbar } from "@/components/site/Navbar";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactSection } from "@/components/site/ContactSection";
 import heroImage from "@/assets/hero-appliances.jpg";
+import logoImg from "@/assets/vigise-logo.png";
 import logoAsset from "@/assets/vigise-logo.png.asset.json";
-import sudharsanPhoto from "@/assets/Sudharsan.jpg.asset.json";
-import chandruPhoto from "@/assets/Chandru.jpg.asset.json";
-import prabuPhoto from "@/assets/Prabu_Kumar.jpg.asset.json";
-import nelopherPhoto from "@/assets/Nelopher.png.asset.json";
+import sudharsanImg from "@/assets/Sudharsan.jpg";
+import chandruImg from "@/assets/Chandru.jpg";
+import prabuImg from "@/assets/Prabu Kumar.jpg";
+import nelopherImg from "@/assets/Nelopher.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -105,28 +106,28 @@ const team = [
     role: "Founder",
     bio: "Leads partnerships and product direction, with a background in embedded systems and appliance electronics.",
     linkedin: "https://www.linkedin.com/in/sudharsan-d-30bb79364/?skipRedirect=true",
-    photo: sudharsanPhoto.url,
+    photo: sudharsanImg,
   },
   {
     name: "Chandru P",
     role: "Founder",
     bio: "Drives hardware integration and bench validation across appliance modules.",
     linkedin: "https://www.linkedin.com/in/chandru-p-13bb99333/?skipRedirect=true",
-    photo: chandruPhoto.url,
+    photo: chandruImg,
   },
   {
     name: "Prabu Kumar S P",
     role: "Founder",
     bio: "Builds the diagnostic models and sensing firmware behind Vigise's health reports.",
     linkedin: "https://www.linkedin.com/in/prabu-kumar-s-p-79998326a/?skipRedirect=true",
-    photo: prabuPhoto.url,
+    photo: prabuImg,
   },
   {
     name: "Nelopher Arulsamy",
     role: "Hardware Advisor",
     bio: "Advises on appliance manufacturing, quality engineering, and service operations.",
     linkedin: "https://www.linkedin.com/in/nelopher-arulsamy-645b48330/?skipRedirect=true",
-    photo: nelopherPhoto.url,
+    photo: nelopherImg,
   },
 ];
 
@@ -388,11 +389,9 @@ function Index() {
             <div className="max-w-sm">
               <div className="flex items-center gap-2">
                 <img
-                  src={logoAsset.url}
+                  src={logoImg || logoAsset.url}
                   alt="Vigise logo"
-                  width={144}
-                  height={144}
-                  className="h-8 w-auto rounded-md"
+                  className="h-16 w-auto origin-left object-contain"
                 />
               </div>
               <p className="mt-3 text-sm text-primary-foreground/70">

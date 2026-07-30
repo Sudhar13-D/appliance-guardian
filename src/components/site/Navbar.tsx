@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logoImg from "@/assets/vigise-logo.png";
 import logoAsset from "@/assets/vigise-logo.png.asset.json";
 
 const links = [
@@ -23,6 +24,8 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const logoSrc = logoImg || (logoAsset as { url?: string })?.url || "/vigise-logo.png";
+
   return (
     <header
       className={cn(
@@ -33,11 +36,9 @@ export function Navbar() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold text-primary">
           <img
-            src={logoAsset.url}
+            src={logoSrc}
             alt="Vigise logo"
-            width={144}
-            height={144}
-            className="h-9 w-auto rounded-md"
+            className="h-16 w-auto scale-125 origin-left object-contain"
           />
         </a>
 
