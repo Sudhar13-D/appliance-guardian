@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: appliance-guardian
+    name: vigise
     env: node
     region: singapore
     plan: free
