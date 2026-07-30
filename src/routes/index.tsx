@@ -339,9 +339,9 @@ function Index() {
               Builders at the intersection of hardware and AI
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((m, i) => (
-              <Reveal key={m.role} delay={i * 110}>
+              <Reveal key={m.name} delay={i * 110}>
                 <article className="h-full rounded-2xl border border-border bg-background p-7 shadow-[var(--shadow-card)]">
                   <div className="flex size-14 items-center justify-center rounded-full bg-secondary font-display text-lg font-bold text-primary">
                     {m.name
@@ -353,7 +353,7 @@ function Index() {
                   <p className="text-sm font-medium text-accent-foreground/70">{m.role}</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
                   <a
-                    href="https://www.linkedin.com"
+                    href={m.linkedin}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`${m.name} on LinkedIn`}
