@@ -5,12 +5,12 @@ services:
     region: singapore
     plan: free
     branch: main
-    buildCommand: rm -f package-lock.json && npm install --include=dev && npm run build
+    buildCommand: bun install && bun run build
     startCommand: node .output/server/index.mjs
     envVars:
       - key: NITRO_PRESET
         value: node-server
       - key: NODE_VERSION
-        value: 20.18.0
+        value: 22.12.0
       - key: NPM_CONFIG_PRODUCTION
         value: "false"
