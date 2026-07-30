@@ -16,6 +16,10 @@ import { Navbar } from "@/components/site/Navbar";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactSection } from "@/components/site/ContactSection";
 import heroImage from "@/assets/hero-appliances.jpg";
+import sudharsanPhoto from "@/assets/Sudharsan.jpg.asset.json";
+import chandruPhoto from "@/assets/Chandru.jpg.asset.json";
+import prabuPhoto from "@/assets/Prabu_Kumar.jpg.asset.json";
+import nelopherPhoto from "@/assets/Nelopher.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -100,24 +104,28 @@ const team = [
     role: "Founder",
     bio: "Leads partnerships and product direction, with a background in embedded systems and appliance electronics.",
     linkedin: "https://www.linkedin.com/in/sudharsan-d-30bb79364",
+    photo: sudharsanPhoto.url,
   },
   {
     name: "Chandru P",
     role: "Founder",
-    bio: "Builds the diagnostic models and sensing firmware behind Vigise's health reports.",
+    bio: "Drives hardware integration and bench validation across appliance modules.",
     linkedin: "https://www.linkedin.com/in/chandru-p-13bb99333/",
+    photo: chandruPhoto.url,
   },
   {
     name: "Prabu Kumar S P",
     role: "Founder",
-    bio: "Drives hardware integration and bench validation across appliance modules.",
+    bio: "Builds the diagnostic models and sensing firmware behind Vigise's health reports.",
     linkedin: "https://www.linkedin.com/in/prabu-kumar-s-p-79998326a/",
+    photo: prabuPhoto.url,
   },
   {
     name: "Nelopher Arulsamy",
     role: "Hardware Advisor",
     bio: "Advises on appliance manufacturing, quality engineering, and service operations.",
     linkedin: "https://www.linkedin.com/in/nelopher-arulsamy-645b48330/",
+    photo: nelopherPhoto.url,
   },
 ];
 
@@ -343,12 +351,14 @@ function Index() {
             {team.map((m, i) => (
               <Reveal key={m.name} delay={i * 110}>
                 <article className="h-full rounded-2xl border border-border bg-background p-7 shadow-[var(--shadow-card)]">
-                  <div className="flex size-14 items-center justify-center rounded-full bg-secondary font-display text-lg font-bold text-primary">
-                    {m.name
-                      .split(" ")
-                      .map((w) => w[0])
-                      .join("")}
-                  </div>
+                  <img
+                    src={m.photo}
+                    alt={`Portrait of ${m.name}, ${m.role} at Vigise`}
+                    loading="lazy"
+                    width={112}
+                    height={112}
+                    className="size-14 rounded-full object-cover bg-secondary"
+                  />
                   <h3 className="mt-5 font-display text-lg font-bold text-primary">{m.name}</h3>
                   <p className="text-sm font-medium text-accent-foreground/70">{m.role}</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
