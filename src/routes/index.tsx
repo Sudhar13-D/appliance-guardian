@@ -20,13 +20,13 @@ import heroImage from "@/assets/hero-appliances.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lumora — Give Every Appliance a Health Report Card" },
+      { title: "Vigise — Give Every Appliance a Health Report Card" },
       {
         name: "description",
         content:
-          "Lumora embeds AI fault detection and predictive maintenance into India's mass-market home appliances, in partnership with manufacturers.",
+          "Vigise embeds AI fault detection and predictive maintenance into India's mass-market home appliances, in partnership with manufacturers.",
       },
-      { property: "og:title", content: "Lumora — Give Every Appliance a Health Report Card" },
+      { property: "og:title", content: "Vigise — Give Every Appliance a Health Report Card" },
       {
         property: "og:description",
         content:
@@ -96,19 +96,28 @@ const phases = [
 
 const team = [
   {
-    name: "Founder Name",
-    role: "Co-founder & CEO",
-    bio: "Leads partnerships and product. Background in embedded systems and appliance electronics.",
+    name: "Sudharsan D",
+    role: "Founder",
+    bio: "Leads partnerships and product direction, with a background in embedded systems and appliance electronics.",
+    linkedin: "https://www.linkedin.com/in/sudharsan-d-30bb79364",
   },
   {
-    name: "Founder Name",
-    role: "Co-founder & CTO",
-    bio: "Builds the diagnostic models and sensing firmware behind Lumora's health reports.",
+    name: "Chandru P",
+    role: "Founder",
+    bio: "Builds the diagnostic models and sensing firmware behind Vigise's health reports.",
+    linkedin: "https://www.linkedin.com/in/chandru-p-13bb99333/",
   },
   {
-    name: "Advisor Name",
+    name: "Prabu Kumar S P",
+    role: "Founder",
+    bio: "Drives hardware integration and bench validation across appliance modules.",
+    linkedin: "https://www.linkedin.com/in/prabu-kumar-s-p-79998326a/",
+  },
+  {
+    name: "Nelopher Arulsamy",
     role: "Hardware Advisor",
-    bio: "Two decades in appliance manufacturing, quality engineering, and service operations.",
+    bio: "Advises on appliance manufacturing, quality engineering, and service operations.",
+    linkedin: "https://www.linkedin.com/in/nelopher-arulsamy-645b48330/",
   },
 ];
 
@@ -330,9 +339,9 @@ function Index() {
               Builders at the intersection of hardware and AI
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((m, i) => (
-              <Reveal key={m.role} delay={i * 110}>
+              <Reveal key={m.name} delay={i * 110}>
                 <article className="h-full rounded-2xl border border-border bg-background p-7 shadow-[var(--shadow-card)]">
                   <div className="flex size-14 items-center justify-center rounded-full bg-secondary font-display text-lg font-bold text-primary">
                     {m.name
@@ -344,7 +353,7 @@ function Index() {
                   <p className="text-sm font-medium text-accent-foreground/70">{m.role}</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
                   <a
-                    href="https://www.linkedin.com"
+                    href={m.linkedin}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`${m.name} on LinkedIn`}
@@ -370,7 +379,7 @@ function Index() {
                 <span className="flex size-8 items-center justify-center rounded-lg bg-primary-foreground/10">
                   <Activity className="size-4 text-accent" />
                 </span>
-                Lumora
+                Vigise
               </div>
               <p className="mt-3 text-sm text-primary-foreground/70">
                 A health report card for every appliance — embedded AI diagnostics for India's
@@ -396,14 +405,14 @@ function Index() {
                   href="https://www.linkedin.com"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Lumora on LinkedIn"
+                  aria-label="Vigise on LinkedIn"
                   className="flex size-9 items-center justify-center rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20"
                 >
                   <Linkedin className="size-4" />
                 </a>
                 <a
-                  href="mailto:hello@lumora.in"
-                  aria-label="Email Lumora"
+                  href="mailto:vigise26@gmail.com"
+                  aria-label="Email Vigise"
                   className="flex size-9 items-center justify-center rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20"
                 >
                   <Mail className="size-4" />
@@ -412,7 +421,7 @@ function Index() {
             </div>
           </div>
           <p className="mt-12 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/60">
-            © {new Date().getFullYear()} Lumora. Coimbatore, Tamil Nadu, India.
+            © {new Date().getFullYear()} Vigise. Coimbatore, Tamil Nadu, India.
           </p>
         </div>
       </footer>

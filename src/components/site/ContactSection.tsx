@@ -26,15 +26,15 @@ export function ContactSection() {
                 <span className="flex size-9 items-center justify-center rounded-lg bg-background text-primary shadow-[var(--shadow-card)]">
                   <Mail className="size-4" />
                 </span>
-                <a href="mailto:hello@lumora.in" className="font-medium text-foreground">
-                  hello@lumora.in
+                <a href="mailto:vigise26@gmail.com" className="font-medium text-foreground">
+                  vigise26@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex size-9 items-center justify-center rounded-lg bg-background text-primary shadow-[var(--shadow-card)]">
                   <Phone className="size-4" />
                 </span>
-                <span className="font-medium text-foreground">+91 00000 00000</span>
+                <span className="font-medium text-foreground">+91 99443 19337</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex size-9 items-center justify-center rounded-lg bg-background text-primary shadow-[var(--shadow-card)]">

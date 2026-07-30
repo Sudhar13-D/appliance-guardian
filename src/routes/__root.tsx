@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lumora — AI Appliance Health Diagnostics" },
+      { title: "Vigise — AI Appliance Health Diagnostics" },
       {
         name: "description",
         content:
           "Embedded AI predictive maintenance and fault diagnostics for India's mass-market home appliances.",
       },
-      { name: "author", content: "Lumora" },
-      { property: "og:title", content: "Lumora — AI Appliance Health Diagnostics" },
+      { name: "author", content: "Vigise" },
+      { property: "og:title", content: "Vigise — AI Appliance Health Diagnostics" },
       {
         property: "og:description",
         content:
