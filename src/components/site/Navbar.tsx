@@ -34,7 +34,7 @@ export function Navbar() {
           <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <Activity className="size-4" />
           </span>
-          Lumora
+          Vigise
         </a>
 
         <div className="hidden items-center gap-7 md:flex">

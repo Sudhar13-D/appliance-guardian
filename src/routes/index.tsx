@@ -20,13 +20,13 @@ import heroImage from "@/assets/hero-appliances.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lumora — Give Every Appliance a Health Report Card" },
+      { title: "Vigise — Give Every Appliance a Health Report Card" },
       {
         name: "description",
         content:
-          "Lumora embeds AI fault detection and predictive maintenance into India's mass-market home appliances, in partnership with manufacturers.",
+          "Vigise embeds AI fault detection and predictive maintenance into India's mass-market home appliances, in partnership with manufacturers.",
       },
-      { property: "og:title", content: "Lumora — Give Every Appliance a Health Report Card" },
+      { property: "og:title", content: "Vigise — Give Every Appliance a Health Report Card" },
       {
         property: "og:description",
         content:
@@ -103,7 +103,7 @@ const team = [
   {
     name: "Founder Name",
     role: "Co-founder & CTO",
-    bio: "Builds the diagnostic models and sensing firmware behind Lumora's health reports.",
+    bio: "Builds the diagnostic models and sensing firmware behind Vigise's health reports.",
   },
   {
     name: "Advisor Name",
@@ -370,7 +370,7 @@ function Index() {
                 <span className="flex size-8 items-center justify-center rounded-lg bg-primary-foreground/10">
                   <Activity className="size-4 text-accent" />
                 </span>
-                Lumora
+                Vigise
               </div>
               <p className="mt-3 text-sm text-primary-foreground/70">
                 A health report card for every appliance — embedded AI diagnostics for India's
@@ -396,14 +396,14 @@ function Index() {
                   href="https://www.linkedin.com"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Lumora on LinkedIn"
+                  aria-label="Vigise on LinkedIn"
                   className="flex size-9 items-center justify-center rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20"
                 >
                   <Linkedin className="size-4" />
                 </a>
                 <a
-                  href="mailto:hello@lumora.in"
-                  aria-label="Email Lumora"
+                  href="mailto:vigise26@gmail.com"
+                  aria-label="Email Vigise"
                   className="flex size-9 items-center justify-center rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20"
                 >
                   <Mail className="size-4" />
@@ -412,7 +412,7 @@ function Index() {
             </div>
           </div>
           <p className="mt-12 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/60">
-            © {new Date().getFullYear()} Lumora. Coimbatore, Tamil Nadu, India.
+            © {new Date().getFullYear()} Vigise. Coimbatore, Tamil Nadu, India.
           </p>
         </div>
       </footer>
