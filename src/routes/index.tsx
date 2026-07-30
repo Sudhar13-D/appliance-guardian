@@ -16,6 +16,7 @@ import { Navbar } from "@/components/site/Navbar";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactSection } from "@/components/site/ContactSection";
 import heroImage from "@/assets/hero-appliances.jpg";
+import logoAsset from "@/assets/vigise-logo.png.asset.json";
 import sudharsanPhoto from "@/assets/Sudharsan.jpg.asset.json";
 import chandruPhoto from "@/assets/Chandru.jpg.asset.json";
 import prabuPhoto from "@/assets/Prabu_Kumar.jpg.asset.json";
@@ -385,11 +386,14 @@ function Index() {
         <div className="mx-auto max-w-6xl px-5 py-14">
           <div className="flex flex-col gap-10 md:flex-row md:justify-between">
             <div className="max-w-sm">
-              <div className="flex items-center gap-2 font-display text-lg font-bold">
-                <span className="flex size-8 items-center justify-center rounded-lg bg-primary-foreground/10">
-                  <Activity className="size-4 text-accent" />
-                </span>
-                Vigise
+              <div className="flex items-center gap-2">
+                <img
+                  src={logoAsset.url}
+                  alt="Vigise logo"
+                  width={144}
+                  height={144}
+                  className="h-8 w-auto rounded-md"
+                />
               </div>
               <p className="mt-3 text-sm text-primary-foreground/70">
                 A health report card for every appliance — embedded AI diagnostics for India's
