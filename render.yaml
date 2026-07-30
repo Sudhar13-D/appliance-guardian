@@ -6,7 +6,9 @@ services:
     plan: free
     branch: main
     buildCommand: npm install && npm run build
-    startCommand: npm run preview -- --host 0.0.0.0 --port $PORT
+    startCommand: node .output/server/index.mjs
     envVars:
+      - key: NITRO_PRESET
+        value: node-server
       - key: NODE_VERSION
         value: 20.18.0
